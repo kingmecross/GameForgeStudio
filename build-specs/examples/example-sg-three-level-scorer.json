@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "6'5 Three-Level Scorer",
+  "position": "SG",
+  "height": "6'5\"",
+  "weight": "200 lbs",
+  "wingspan": "6'8\"",
+  "playstyle": "Three-level scoring shooting guard — pull-up threes, mid-range footwork, and enough handle to get to the rim off one or two dribbles",
+  "attributes": {
+    "finishing": 80,
+    "shooting": 92,
+    "playmaking": 70,
+    "defense": 65,
+    "rebounding": 55,
+    "physicals": 82
+  },
+  "badges": [
+    { "name": "Deadeye", "tier": "Hall of Fame" },
+    { "name": "Difficult Shots", "tier": "Gold" },
+    { "name": "Quick First Step", "tier": "Gold" },
+    { "name": "Catch & Shoot", "tier": "Silver" }
+  ],
+  "takeovers": ["Shot Creator", "Sharpshooter"],
+  "targetAudience": "Players who want a classic scoring two-guard, not a specialist",
+  "visualIdentity": {
+    "jerseyColorway": "white and royal blue",
+    "number": "23",
+    "appearanceNotes": "athletic build, high-top fade, wristbands"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "channelName": "Replace with your channel name",
+  "colorPalette": "Describe the fixed color palette every thumbnail should use, e.g. 'black background, one bold accent color, high-contrast white text' — keep it stable across builds regardless of that build's own in-game colorway",
+  "logoPlacement": "Where your logo/watermark sits and how it must never be covered, e.g. 'small wordmark in the bottom-right corner, never over the player's face or the text overlay'",
+  "titleTextStyle": "The text-overlay style every thumbnail should share, e.g. 'bold condensed sans-serif, max 5 words, white with a thin outline in your accent color, placed in the top third of the frame'"
+}

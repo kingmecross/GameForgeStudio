@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "6'10 Stretch Playmaking Forward",
+  "position": "PF",
+  "height": "6'10\"",
+  "weight": "230 lbs",
+  "wingspan": "7'2\"",
+  "playstyle": "Stretch four who spaces the floor from three, rebounds at his size, and can put the ball on the floor to make a play",
+  "attributes": {
+    "finishing": 78,
+    "shooting": 86,
+    "playmaking": 68,
+    "defense": 74,
+    "rebounding": 82,
+    "physicals": 80
+  },
+  "badges": [
+    { "name": "Deadeye", "tier": "Gold" },
+    { "name": "Rebound Chaser", "tier": "Gold" },
+    { "name": "Post Fade Phenom", "tier": "Silver" },
+    { "name": "Boxout Beast", "tier": "Silver" }
+  ],
+  "takeovers": ["Sharpshooter", "Anchor"],
+  "targetAudience": "Bigs who don't want to be stuck under the rim all game — floor-spacing forwards",
+  "visualIdentity": {
+    "jerseyColorway": "maroon and gold",
+    "number": "32",
+    "appearanceNotes": "broad-shouldered frame, short beard, headband"
+  }
+}

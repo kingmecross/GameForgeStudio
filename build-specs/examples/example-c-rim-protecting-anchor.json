@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "7'2 Rim-Protecting Anchor",
+  "position": "C",
+  "height": "7'2\"",
+  "weight": "260 lbs",
+  "wingspan": "7'6\"",
+  "playstyle": "Traditional anchor center — protects the rim, dominates the glass, finishes lobs and put-backs, not a shooter",
+  "attributes": {
+    "finishing": 88,
+    "shooting": 45,
+    "playmaking": 40,
+    "defense": 92,
+    "rebounding": 94,
+    "physicals": 90
+  },
+  "badges": [
+    { "name": "Rim Protector", "tier": "Hall of Fame" },
+    { "name": "Boxout Beast", "tier": "Hall of Fame" },
+    { "name": "Aerial Wizard", "tier": "Gold" },
+    { "name": "Post Powerhouse", "tier": "Gold" }
+  ],
+  "takeovers": ["Anchor", "Paint Patrol"],
+  "targetAudience": "Players who want to dominate the paint on both ends, not chase highlight dunks from the perimeter",
+  "visualIdentity": {
+    "jerseyColorway": "black and red",
+    "number": "0",
+    "appearanceNotes": "massive frame, bald head, arm sleeve"
+  }
+}

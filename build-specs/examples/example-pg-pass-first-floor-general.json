@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "6'2 Pass-First Floor General",
+  "position": "PG",
+  "height": "6'2\"",
+  "weight": "175 lbs",
+  "wingspan": "6'4\"",
+  "playstyle": "Pure pass-first floor general — elite ball-handling and vision, sets up teammates, picks pockets on defense, doesn't force his own shot",
+  "attributes": {
+    "finishing": 62,
+    "shooting": 74,
+    "playmaking": 96,
+    "defense": 78,
+    "rebounding": 45,
+    "physicals": 80
+  },
+  "badges": [
+    { "name": "Dimer", "tier": "Hall of Fame" },
+    { "name": "Ankle Braces", "tier": "Gold" },
+    { "name": "Pick Dodger", "tier": "Gold" },
+    { "name": "Clamps", "tier": "Silver" }
+  ],
+  "takeovers": ["Facilitator", "Perimeter Lockdown"],
+  "targetAudience": "Rec/Pro-Am players who want to run a team, not just score",
+  "visualIdentity": {
+    "jerseyColorway": "navy and silver",
+    "number": "11",
+    "appearanceNotes": "lean frame, low-top fade, headband"
+  }
+}

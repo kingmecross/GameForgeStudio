@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "6'6 Slashing Playmaker",
+  "position": "PG",
+  "height": "6'6\"",
+  "weight": "195 lbs",
+  "wingspan": "6'9\"",
+  "playstyle": "Downhill slasher and secondary playmaker who can finish through contact, create off the dribble, and knock down catch-and-shoot threes",
+  "attributes": {
+    "finishing": 88,
+    "shooting": 84,
+    "playmaking": 90,
+    "defense": 68,
+    "rebounding": 55,
+    "physicals": 85
+  },
+  "badges": [
+    { "name": "Aerial Wizard", "tier": "Hall of Fame" },
+    { "name": "Downhill", "tier": "Hall of Fame" },
+    { "name": "Deadeye", "tier": "Gold" },
+    { "name": "Quick First Step", "tier": "Gold" }
+  ],
+  "takeovers": ["Shot Creator", "Slasher"],
+  "targetAudience": "Competitive Park and Rec players who want one versatile day-one build instead of a hyper-specialized shooter or big",
+  "visualIdentity": {
+    "jerseyColorway": "black and crimson with gold trim",
+    "number": "4",
+    "appearanceNotes": "short fade with a line-up, light beard, confident/focused expression"
+  }
+}

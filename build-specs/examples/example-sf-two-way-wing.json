@@ -1,0 +1,30 @@
+{
+  "game": "nba2k27",
+  "buildName": "6'8 Two-Way Wing",
+  "position": "SF",
+  "height": "6'8\"",
+  "weight": "215 lbs",
+  "wingspan": "7'0\"",
+  "playstyle": "Two-way wing — locks up multiple positions on defense, finishes above the rim in transition, spot-up shooter on offense",
+  "attributes": {
+    "finishing": 84,
+    "shooting": 78,
+    "playmaking": 62,
+    "defense": 88,
+    "rebounding": 72,
+    "physicals": 87
+  },
+  "badges": [
+    { "name": "Clamps", "tier": "Hall of Fame" },
+    { "name": "Interceptor", "tier": "Gold" },
+    { "name": "Aerial Wizard", "tier": "Gold" },
+    { "name": "Catch & Shoot", "tier": "Silver" }
+  ],
+  "takeovers": ["Lockdown Defender", "Slasher"],
+  "targetAudience": "3v3/Rec players who want to guard the other team's best scorer and still contribute on offense",
+  "visualIdentity": {
+    "jerseyColorway": "black and neon green",
+    "number": "5",
+    "appearanceNotes": "muscular build, short taper haircut, compression sleeve"
+  }
+}
