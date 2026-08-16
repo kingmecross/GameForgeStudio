@@ -6,7 +6,7 @@ import os from 'node:os';
 import { loadBrandKit, describeBrandKit } from '../src/brandKit.js';
 
 function tempDir() {
-  return mkdtempSync(path.join(os.tmpdir(), 'gameforge-brandkit-test-'));
+  return mkdtempSync(path.join(os.tmpdir(), 'myuni-brandkit-test-'));
 }
 
 const VALID_KIT = {

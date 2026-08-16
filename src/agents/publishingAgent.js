@@ -59,7 +59,7 @@ export async function run(buildSpec, artifacts = {}) {
   return {
     'publish-plan.json': {
       buildName: buildSpec.buildName,
-      status: 'v1: manual posting — GameForge Studio does not call any platform API itself; see ROADMAP.md v2',
+      status: 'v1: manual posting — MyUni AI does not call any platform API itself; see ROADMAP.md v2',
       suggestedPostingOrder: [
         'YouTube (long-form) — anchor upload, drives search traffic for the build name',
         'YouTube Shorts + TikTok — same day or next day, cross-promote the long-form video',

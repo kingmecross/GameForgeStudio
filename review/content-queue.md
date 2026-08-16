@@ -1,4 +1,4 @@
-# GameForge Studio — Ranked Content Queue
+# MyUni AI — Ranked Content Queue
 
 Ranked by **expected click-through**, based on general/historical NBA 2K
 creator-content patterns (audience size by position, what thumbnails/hooks

@@ -6,7 +6,7 @@ import os from 'node:os';
 import { nextVersion, claimVersionDir, writeVersion } from '../src/versionWriter.js';
 
 function tempDir() {
-  return mkdtempSync(path.join(os.tmpdir(), 'gameforge-versionwriter-test-'));
+  return mkdtempSync(path.join(os.tmpdir(), 'myuni-versionwriter-test-'));
 }
 
 test('nextVersion returns 1 when the build directory does not exist', () => {

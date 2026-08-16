@@ -1,4 +1,4 @@
-# GameForge Studio
+# MyUni AI
 
 Turns a structured game-build spec into a full YouTube/Shorts/TikTok content
 package: scripts, thumbnail concepts, SEO metadata, social captions,
@@ -109,7 +109,7 @@ fields by hand. Required for
 player's look in the image/video prompts — if omitted, the model invents one
 consistent look and reuses it across every prompt in that run.
 
-**Accuracy note:** GameForge Studio only writes what you put in the build spec —
+**Accuracy note:** MyUni AI only writes what you put in the build spec —
 it does not know NBA 2K27's real mechanics and is explicitly instructed not
 to invent attribute caps, badge counts, or patch details that aren't in your
 spec. Feed it a build spec grounded in whatever's actually confirmed about

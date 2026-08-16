@@ -1,4 +1,4 @@
-// The GameForge Studio Playbook's brand voice — shared verbatim across every
+// The MyUni AI Playbook's brand voice — shared verbatim across every
 // agent that writes copy, so builds read as one channel, not one-off styles.
 // See PLAYBOOK.md for the full framework this is drawn from.
 export const PLAYBOOK_VOICE =

@@ -46,7 +46,57 @@ test('validateBuildSpec surfaces game-specific validation errors', async () => {
   );
 });
 
+test('validateBuildSpec rejects an out-of-range attribute', async () => {
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, attributes: { finishing: 150 } }),
+    /attribute "finishing" must be a whole number between 0 and 99/
+  );
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, attributes: { finishing: -1 } }),
+    /attribute "finishing" must be a whole number between 0 and 99/
+  );
+});
+
+test('validateBuildSpec rejects a non-integer or non-numeric attribute', async () => {
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, attributes: { finishing: 92.5 } }),
+    /attribute "finishing" must be a whole number/
+  );
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, attributes: { finishing: '92' } }),
+    /attribute "finishing" must be a whole number/
+  );
+});
+
+test('validateBuildSpec rejects an invalid badge tier', async () => {
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, badges: [{ name: 'Downhill', tier: 'Diamond' }] }),
+    /badges\[0\] must have a non-empty "name" and "tier" one of/
+  );
+});
+
+test('validateBuildSpec rejects a takeovers array with a non-string element', async () => {
+  await assert.rejects(
+    () => validateBuildSpec({ ...VALID_SPEC, takeovers: ['Slasher', 42] }),
+    /takeovers.*must be an array of non-empty strings/
+  );
+});
+
+test('validateBuildSpec accepts an empty takeovers array', async () => {
+  const { spec } = await validateBuildSpec({ ...VALID_SPEC, takeovers: [] });
+  assert.deepEqual(spec.takeovers, []);
+});
+
 test('slugify produces a filesystem-safe slug', () => {
   assert.equal(slugify("6'6 Slashing Playmaker"), '6-6-slashing-playmaker');
   assert.equal(slugify('  Weird   Spacing  '), 'weird-spacing');
+});
+
+test('slugify falls back to a generated id for a name with no latin/digit characters', () => {
+  assert.match(slugify('日本語ビルド'), /^build-\d+$/);
+});
+
+test('slugify truncates a very long name so the filename stays well under OS path limits', () => {
+  const slug = slugify('a'.repeat(500));
+  assert.ok(slug.length <= 80);
 });

@@ -36,7 +36,7 @@ function fakeFromSchema(schema) {
 }
 
 function tempDir() {
-  return mkdtempSync(path.join(os.tmpdir(), 'gameforge-orch-test-'));
+  return mkdtempSync(path.join(os.tmpdir(), 'myuni-orch-test-'));
 }
 
 test('generate runs all sub-agents and writes a complete versioned output', async () => {

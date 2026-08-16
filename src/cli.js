@@ -75,6 +75,11 @@ async function main() {
   }
 
   if (command === 'create') {
+    // Fail before asking 17 questions, not after — createLLMClient() throws a clear
+    // "no ANTHROPIC_API_KEY" message, and there's no point running the wizard just to
+    // hit that message once generation starts.
+    const llmClient = createLLMClient();
+
     const prompter = createReadlinePrompter();
     let spec;
     try {
@@ -89,7 +94,6 @@ async function main() {
     console.log(`\nSaved your build spec -> ${specPath}`);
     console.log('Generating your content package now — this uses your Claude API key and costs a few cents...\n');
 
-    const llmClient = createLLMClient();
     const voiceClient = args.narrate ? createVoiceClient() : undefined;
     const { errors } = await runOne(specPath, { llmClient, outputRoot: args.out || 'output', voiceClient });
     if (Object.keys(errors).length) process.exitCode = 1;
@@ -102,8 +106,8 @@ async function main() {
       process.exitCode = 1;
       return;
     }
-    const raw = loadBuildSpecFile(args.spec);
     try {
+      const raw = loadBuildSpecFile(args.spec);
       const { spec } = await validateBuildSpec(raw);
       console.log(`Valid ${spec.game} build spec: "${spec.buildName}"`);
     } catch (err) {

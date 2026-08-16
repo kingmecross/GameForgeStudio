@@ -1,4 +1,4 @@
-# GameForge Studio Playbook
+# MyUni AI Playbook
 
 **Source note:** built from established, general creator-content principles
 (hook theory, retention pacing, thumbnail psychology) plus what's already

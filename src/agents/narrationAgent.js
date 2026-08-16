@@ -6,6 +6,10 @@ const MAX_CHARS = 4500; // conservative per-request length a free/starter TTS ti
 function stripMarkdown(md) {
   return md
     .replace(/^#+\s*/gm, '')
+    .replace(/```[\s\S]*?```/g, '')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/^\s*[-*+]\s+/gm, '')
+    .replace(/^\s*\d+\.\s+/gm, '')
     .replace(/\*\*(.+?)\*\*/g, '$1')
     .replace(/\*(.+?)\*/g, '$1')
     .trim();

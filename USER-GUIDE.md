@@ -1,4 +1,4 @@
-# GameForge Studio — How To Use It (No Coding Required)
+# MyUni AI — How To Use It (No Coding Required)
 
 This is the plain-English guide. If you just want to make a build video
 package, this is the only doc you need. (`README.md` and `ARCHITECTURE.md`
@@ -26,7 +26,7 @@ computer, ready to use.
 
 ## Making a build (the whole thing, one command)
 
-1. Open a terminal in the GameForge Studio folder. (If you're not sure how:
+1. Open a terminal in the MyUni AI folder. (If you're not sure how:
    open the folder in File Explorer, click the address bar, type `cmd`,
    press Enter — a black window opens already pointed at the right place.)
 2. Type this and press Enter:

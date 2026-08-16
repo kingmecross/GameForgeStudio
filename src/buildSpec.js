@@ -38,10 +38,17 @@ export async function validateBuildSpec(spec) {
   return { spec, gameModule };
 }
 
+const MAX_SLUG_LENGTH = 80; // keeps the resulting filename well under Windows' ~255-char component limit
+
 export function slugify(name) {
-  return name
+  const slug = name
     .toLowerCase()
     .trim()
     .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+    .replace(/^-+|-+$/g, '')
+    .slice(0, MAX_SLUG_LENGTH)
+    .replace(/-+$/g, '');
+  // Falls back for names with no Latin/digit characters (e.g. fully non-Latin or emoji-only)
+  // so two differently-named builds never silently collide on the same output file.
+  return slug || `build-${Date.now()}`;
 }

@@ -27,6 +27,26 @@ test('run strips markdown headers/bold before narrating', async () => {
   assert.equal(narrated, 'Hook\nThis is bold and italic.');
 });
 
+test('run strips markdown links, list bullets, and code fences before narrating', async () => {
+  let narrated;
+  const voiceClient = fakeVoiceClient(async (text) => { narrated = text; return Buffer.from('audio'); });
+  const script = [
+    '# Hook',
+    'Check the [build guide](https://example.com/guide) first.',
+    '- First step',
+    '- Second step',
+    '1. Numbered step',
+    '```',
+    'code block',
+    '```',
+  ].join('\n');
+  await run(BUILD_SPEC, { 'script-longform.md': script }, { voiceClient });
+  assert.equal(
+    narrated,
+    'Hook\nCheck the build guide first.\nFirst step\nSecond step\nNumbered step'
+  );
+});
+
 test('run returns narration.mp3 as a Buffer for a normal-length script', async () => {
   const voiceClient = fakeVoiceClient();
   const result = await run(BUILD_SPEC, { 'script-longform.md': 'Short script.' }, { voiceClient });

@@ -70,7 +70,7 @@ a full code review + gap audit, now with a real non-technical entry point.
   brand kit only shapes prompts, it doesn't render a thumbnail. You still
   run those prompts through Higgsfield (or whatever generator) by hand.
 - No actual publishing — `publish-plan.json` is drop-in ready to post from
-  manually, but nothing in GameForge Studio calls a platform API.
+  manually, but nothing in MyUni AI calls a platform API.
 - Trend scoring is a deterministic heuristic, not a real virality model —
   useful as a relative signal across your own builds, not an absolute
   prediction.

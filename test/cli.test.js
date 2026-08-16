@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 const CLI_PATH = fileURLToPath(new URL('../src/cli.js', import.meta.url));
 
 function tempDir() {
-  return mkdtempSync(path.join(os.tmpdir(), 'gameforge-cli-test-'));
+  return mkdtempSync(path.join(os.tmpdir(), 'myuni-cli-test-'));
 }
 
 const VALID_SPEC = {
